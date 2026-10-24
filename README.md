@@ -6,6 +6,6 @@ This repository holds **only** legal documents. It contains no application code.
 
 | App | Privacy policy |
 |---|---|
-| GroupTravel (Android, `com.gitgoodsoftware.grouptravel`) | `grouptravel/privacy.html` (coming soon) |
+| GroupTravel (Android, `com.gitgoodsoftware.grouptravel`) | [grouptravel/privacy.html](https://nickmartin1ee7.github.io/gitgoodsoftware-legal/grouptravel/privacy.html) |
 
 Contact: [contact@gitgoodsoftware.com](mailto:contact@gitgoodsoftware.com)
