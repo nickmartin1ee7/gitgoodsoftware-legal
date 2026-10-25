@@ -34,7 +34,7 @@
   <li>We only collect your location <strong>while you are sharing</strong> in a meetup, and only after you tap to start.</li>
   <li>The Android app uses the <strong>"While using the app"</strong> location permission. It never asks for background ("all the time") location. While you share, a notification and an in-app banner are always shown, each with a Stop button.</li>
   <li>There are <strong>no accounts</strong>. You only enter a display name.</li>
-  <li>Your location is deleted when you arrive, when you stop, or when the meetup ends, whichever comes first. Everything about a meetup is deleted when it ends.</li>
+  <li>Your location is deleted when you arrive, when you stop, or when the meetup ends, whichever comes first. Everything about a meetup is deleted when it ends, except its random meetup ID and the time its data was deleted, which we keep for 30 days.</li>
   <li>We don't sell your data. There are <strong>no ads, no analytics and no tracking tools</strong> in GroupTravel.</li>
   <li>GroupTravel is for adults <strong>18 and older</strong>.</li>
 </ul>
@@ -105,8 +105,9 @@
 <p>Sharing stops at the first of these: you arrive, you tap Stop, or the meetup ends. A meetup ends 60 minutes after its meet time, unless the organizer changes that.</p>
 <ul>
   <li><strong>Your location</strong> is kept only as your latest position, not a history of where you've been. It is deleted when you tap Stop, when the organizer removes you, and when the meetup ends.</li>
+  <li><strong>If sharing pauses</strong>, for example because you turn off location or remove the location permission, your last location stays on our server until you tap Stop or the meetup ends.</li>
   <li><strong>When you arrive</strong>, sharing stops. You have 10 minutes to tap "I'm not there yet" if the app got it wrong. After that (or right away if you tap Done), your location is deleted and only the time you arrived is kept, until the meetup ends.</li>
-  <li><strong>When the meetup ends</strong>, we delete all of its locations, arrival estimates, display names, access codes and meetup details.</li>
+  <li><strong>When the meetup ends</strong>, we delete all of its locations, arrival estimates, display names, access codes and meetup details. We keep only the random meetup ID and the time its data was deleted, so a phone that is still sharing or an old invite link can show that the meetup has ended. We keep these for 30 days and then delete them too. They don't include any names, places, meet times, access codes or locations.</li>
   <li><strong>Server logs</strong> are kept for no more than 14 days.</li>
   <li><strong>On your phone</strong>, the app keeps its settings and access codes until you clear its data or uninstall it.</li>
 </ul>
