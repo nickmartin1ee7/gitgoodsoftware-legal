@@ -86,6 +86,8 @@
 
 <p><strong>The map.</strong> Only if you tap "Show map", your device downloads the map (its style, map tiles, fonts and icons) from our own server; no map company is involved. The map is built from OpenStreetMap data using Protomaps. Like any request, this shows our server your IP address and which part of the map you are looking at, but our map server keeps no record of these requests: no logs, nothing stored. Your GPS location, name and meetup are never part of a map request: the people on the map are drawn on your device.</p>
 
+<p><strong>Arrival times.</strong> While you're in a meetup, our own server works out everyone's arrival time from your location. Your location isn't sent to any other company for this, and it's deleted when the meetup ends. Our routing server is only reachable from our own server, never from your device, and receives just two points, each rounded to about 11 metres (your last shared location and the meetup's destination), plus how you're travelling. It never receives your name, your IP address or any meetup or member ID, and it keeps no record of these requests: no logs, nothing stored. To avoid repeat requests, our server keeps your last rounded routing position and arrival estimate in memory only; they are never saved to disk or to the database. Routes are built from OpenStreetMap data using Valhalla.</p>
+
 <p><strong>What we don't collect.</strong> We don't collect your email address, phone number, contacts, photos, advertising ID or payment details. We don't use analytics, advertising or crash-reporting tools, and we don't collect your location when you aren't sharing.</p>
 
 <h2>2. How we use it</h2>
@@ -94,11 +96,7 @@
 <h2>3. Who can see it</h2>
 <ul>
   <li><strong>The people in your meetup.</strong> Anyone who joins the meetup from its invite link can see the display names in it and, while you share, your location, arrival estimate and arrival status. Only share the link with people you want to see this.</li>
-  <li><strong>Service providers that work for us.</strong> They process data only on our instructions, to provide their service to us:
-    <ul>
-      <li><strong>Our routing provider</strong> (Stadia Maps). To calculate arrival times, our server sends Stadia Maps two points, each rounded to about 11 metres: your last shared location and the meetup's destination, plus how you're travelling (driving, walking or cycling). Your device never contacts the routing provider, so Stadia Maps sees our server's IP address, not yours. We never send your name, your IP address, any meetup or member ID, or anything else about you. Stadia Maps says it keeps its request logs for about 7 to 14 days and never more than 30 days. To avoid repeat requests, our server keeps your last rounded routing position and arrival estimate in memory only; they are never saved to disk or to the database.</li>
-    </ul>
-  </li>
+  <li><strong>No other company.</strong> We don't share your data with any service provider or other company: the map comes from our own server, and arrival times are worked out there too.</li>
   <li><strong>When the law requires it.</strong> We may disclose data if we are legally required to, or to protect people's safety. Because we delete meetup data quickly, we usually have very little to disclose.</li>
 </ul>
 <p><strong>Hosting.</strong> We run the GroupTravel server ourselves (in Docker), so no hosting company stores your data. Our database is not backed up, so deleted data doesn't live on in backups.</p>
@@ -132,7 +130,7 @@
 <p>GroupTravel is intended only for adults aged 18 and older and is not directed at children. Don't use GroupTravel if you are under 18. If we learn that someone under 18 has provided data to us, we will delete it. Contact us if you believe this has happened.</p>
 
 <h2>8. Where data is processed</h2>
-<p>Our service providers may process data in the countries where they operate, which may be different from where you live.</p>
+<p>We process your data only on our own server. No service provider or other company processes it.</p>
 
 <h2>9. Changes to this policy</h2>
 <p>If we change this policy, we will update this page and the "Last updated" date.</p>
