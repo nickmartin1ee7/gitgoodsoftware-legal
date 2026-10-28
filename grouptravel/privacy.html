@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1>GroupTravel privacy policy</h1>
-<p class="muted">Last updated: October 25, 2026</p>
+<p class="muted">Last updated: October 27, 2026</p>
 
 <p>GroupTravel helps a group of friends meet up. While you choose to share, the people in your meetup see where you are and when you'll arrive. Sharing stops on its own when you arrive, when you tap Stop, or when the meetup ends.</p>
 
@@ -31,7 +31,7 @@
 
 <h2>The short version</h2>
 <ul>
-  <li>We only collect your location <strong>while you are sharing</strong> in a meetup, and only after you tap to start.</li>
+  <li>We only collect your location <strong>while you are sharing</strong> in a meetup, and only after you tap to start. (If you tap "Use my current location" when creating a meetup, the app reads it once and uses it only as the meetup's destination.)</li>
   <li>The Android app uses the <strong>"While using the app"</strong> location permission. It never asks for background ("all the time") location. While you share, a notification and an in-app banner are always shown, each with a Stop button.</li>
   <li>There are <strong>no accounts</strong>. You only enter a display name.</li>
   <li>Your location is deleted when you tap Stop, 10 minutes after you arrive, or when the meetup ends, whichever comes first. Everything about a meetup is deleted when it ends, except its random meetup ID and the time its data was deleted, which we keep for 30 days.</li>
@@ -50,7 +50,7 @@
     </tr>
     <tr>
       <td><strong>Meetup details</strong>: meetup name, destination, meet time and end time</td>
-      <td>When an organizer creates a meetup</td>
+      <td>When an organizer creates a meetup. The destination is the place picked from search or the map, coordinates typed in, or, if the organizer taps "Use my current location", their location read once at that moment</td>
       <td>To run the meetup, work out arrival times and know when to stop sharing</td>
     </tr>
     <tr>
@@ -88,7 +88,9 @@
 
 <p><strong>Arrival times.</strong> While you're in a meetup, our own server works out everyone's arrival time from your location. Your location isn't sent to any other company for this, and it's deleted when the meetup ends. Our routing server is only reachable from our own server, never from your device, and receives just two points, each rounded to about 11 metres (your last shared location and the meetup's destination), plus how you're travelling. It never receives your name, your IP address or any meetup or member ID, and it keeps no record of these requests: no logs, nothing stored. To avoid repeat requests, our server keeps your last rounded routing position and arrival estimate in memory only; they are never saved to disk or to the database. Routes are built from OpenStreetMap data using Valhalla.</p>
 
-<p><strong>What we don't collect.</strong> We don't collect your email address, phone number, contacts, photos, advertising ID or payment details. We don't use analytics, advertising or crash-reporting tools, and we don't collect your location when you aren't sharing.</p>
+<p><strong>Destination search (Android app).</strong> When you type a destination, the app sends the text you type to your phone's built-in address lookup service, which is provided by Google on most Android phones, to suggest matching places. As with any internet request, Google receives your phone's IP address. Google's handling is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Our servers never see what you type. We store only the destination you pick, and delete it when the meetup ends. You can skip search by dropping a pin on the map or entering coordinates.</p>
+
+<p><strong>What we don't collect.</strong> We don't collect your email address, phone number, contacts, photos, advertising ID or payment details. We don't use analytics, advertising or crash-reporting tools, and we don't collect your location when you aren't sharing, apart from the one-time "Use my current location" for a new meetup's destination described above. That one-time read never starts sharing.</p>
 
 <h2>2. How we use it</h2>
 <p>We use this data only to run GroupTravel: to show your meetup where its members are and when they'll arrive, to detect arrival, to stop sharing at the right time, and to keep the service secure. We don't sell it, use it for advertising, build profiles of you, or use it for any other purpose.</p>
@@ -96,7 +98,7 @@
 <h2>3. Who can see it</h2>
 <ul>
   <li><strong>The people in your meetup.</strong> Anyone who joins the meetup from its invite link can see the display names in it and, while you share, your location, arrival estimate and arrival status. Only share the link with people you want to see this.</li>
-  <li><strong>No other company.</strong> We don't share your data with any service provider or other company: the map comes from our own server, and arrival times are worked out there too.</li>
+  <li><strong>No other company gets your location.</strong> We don't share your data with any service provider or other company: the map comes from our own server, and arrival times are worked out there too. The one exception is the text you type into destination search in the Android app, which goes to your phone's address lookup service (Google on most Android phones; see "Destination search" in section 1). The app never adds your location or your name to it.</li>
   <li><strong>When the law requires it.</strong> We may disclose data if we are legally required to, or to protect people's safety. Because we delete meetup data quickly, we usually have very little to disclose.</li>
 </ul>
 <p><strong>Hosting.</strong> We run the GroupTravel server ourselves (in Docker), so no hosting company stores your data. Our database is not backed up, so deleted data doesn't live on in backups.</p>
@@ -130,7 +132,7 @@
 <p>GroupTravel is intended only for adults aged 18 and older and is not directed at children. Don't use GroupTravel if you are under 18. If we learn that someone under 18 has provided data to us, we will delete it. Contact us if you believe this has happened.</p>
 
 <h2>8. Where data is processed</h2>
-<p>We process your data only on our own server. No service provider or other company processes it.</p>
+<p>We process your data only on our own server. No service provider or other company processes it. The text you type into destination search in the Android app is handled by your phone's address lookup service instead (Google on most Android phones; see section 1), and never reaches our server.</p>
 
 <h2>9. Changes to this policy</h2>
 <p>If we change this policy, we will update this page and the "Last updated" date.</p>
